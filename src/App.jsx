@@ -1,29 +1,31 @@
-// file ka first letter should be capital
-//jsx contains both html and react 
-// rfce for normal function 
-// fafce for arrow function 
-// className
-// curly braces for writing  number
-// style ke liye object bana padega {()} 
-// PROPS PARENT SE CHILD MAINE 
-// PROPS -JS OBJECTS 
-import Button from "./button" 
+
+// import Button from "./button" 
+import List from "./components/List";
+import Form from "./components/Form";
+
+import { useState } from "react";
+
 function App(){
-  const styles={color:'red',backgroundColor:'blue'};
+ const [firstName,setFirstName]=useState('abc')
+// firstName is always abc but the onclick chnages are happening in function 
+   const handleClick=()=>{
+    setFirstName('xyz')
+    console.log(firstName);
+   }
   return (
     <div>
-      <Button text="click"/>
-      <Button text="Submit"/>
-      <Button text="apply"/>
-      <Button text="contact"/>
-      <h1 style={styles}>react</h1>
-      <input maxLength={5}/>
-
+      <p>{firstName}</p>
      
+      <button onClick={handleClick}
+       className="bg-blue-500 py-2 px-6 rounded-md m-2 text-white">click</button>
+       <List/>
+       <Form/>
+      
+      
     </div>
 
   )
  }
 
-export default App
+export default App;
 
