@@ -18,5 +18,14 @@
  usestate is used when we want to update a data on the screen
  useState is a function which need to be call
  useState 
+
+
+ id is used for warning 
+
+ useeffect it is used for state and city 
+ it works on dependencies
+
+ prop drilling :data which is common for each node 
+we create a parent node 
 */
 
