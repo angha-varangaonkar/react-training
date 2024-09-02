@@ -27,5 +27,13 @@
 
  prop drilling :data which is common for each node 
 we create a parent node 
+
+
+routing and nested routing 
+in routing we add the path of the 
+
+
+
+controled and uncontrolled compenent 
 */
 
