@@ -35,5 +35,13 @@ in routing we add the path of the
 
 
 controled and uncontrolled compenent 
+
+
+
+
+if we want to customize the tailwind the use [] eg text-[50px] sm:bg-blue-500 //this is used for mobile phone 576>
+
+>678 md:bg-orange-500
+>1000 lg:bg-green-500
 */
 
